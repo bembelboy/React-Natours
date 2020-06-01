@@ -19,7 +19,7 @@ const Story = () => {
     {
       heading: "Vacation to shed to without this pesky voyeurs",
       mainPost:
-        "This is the generic Post that will let you know how nice this experience is. Very nice 10/10. Would do again and Recommend to your granny while I am washing her on the Mount Everest in the inside of a Papaya.",
+        "This is the generic Post that will let you know how nice this experience is. Very nice 10/10. Would do again and Recommend to your granny while I am washing her on the Mount Everest in the inside of a Papaya. This text should slightly differ so I can use GitHub",
       userPicture: Tarzan,
       Username: "Tarzan"
     }
