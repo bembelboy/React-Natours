@@ -2,8 +2,10 @@ import React, { useState } from "react";
 
 import * as styled from "./styledStories";
 
-import  Jane  from "../../../img/nat-8.jpg";
-import  Tarzan  from "../../../img/nat-9.jpg";
+import Jane from "../../../img/nat-8.jpg";
+import Tarzan from "../../../img/nat-9.jpg";
+import BackgroundVideoMP4 from "../../../img/video.mp4";
+import BackgroundVideoWEBM from "../../../img/video.webm";
 
 import Post from "./Post/Post.js";
 
@@ -38,6 +40,13 @@ const Story = () => {
   return (
     <styled.StoriesContainer>
       <styled.StoryHeading>We make people Genuinly happy</styled.StoryHeading>
+      <styled.StoryVideoBox>
+        <styled.StoryVideo autoPlay muted loop >
+          <source src={BackgroundVideoMP4} />
+          <source src={BackgroundVideoWEBM}/>
+          This Content is not supported on your browser
+        </styled.StoryVideo>
+      </styled.StoryVideoBox>
       {PostArray}
       <styled.StoryButton>More Stories</styled.StoryButton>
     </styled.StoriesContainer>
