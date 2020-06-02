@@ -14,6 +14,7 @@ transition: all .2s;
 font-weight: 700;
 position: relative;
 font-size: 1.6rem;
+cursor: pointer;
 
 :hover{
     transform: translateY(-3px);

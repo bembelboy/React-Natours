@@ -24,8 +24,6 @@ export const BookingBox = styled.div `
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem
     rgba(${props => props.theme[nameProperty.black]}, 0.15);
-
-  height: 50rem;
 `;
 
 export const BookingHeading = styled(SecondaryHeading)`

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import * as nameProperty from '../../../../GlobalStyles/Theme/nameProperties.js';
+import { WhiteButton } from './../../../UI/styledButtons.js';
 
 export const BookingFormBox = styled.div `
   width: 50%;
@@ -55,5 +56,21 @@ transition: all .3s;
 opacity: 0;
 visibility: hidden;
 transform: translateY(-3.5rem);
+}
+`;
+
+export const FormButtonBox = styled.div`
+width: 40%;
+padding: 0 6rem 4rem 6rem;
+`;
+
+export const SubmitButton = styled(WhiteButton)`
+  min-width: 10.5rem;
+  margin-left: 5rem;
+background-color: rgb(${props => props.theme[nameProperty.mediumGreen]});
+color: rgb(${props => props.theme[nameProperty.white]});
+
+&:after{
+    background-color: rgb(${props => props.theme[nameProperty.mediumGreen]});
 }
 `;
