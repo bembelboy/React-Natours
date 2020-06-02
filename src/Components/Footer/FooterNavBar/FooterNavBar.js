@@ -3,7 +3,7 @@ import * as styled  from './styledFooterNavBar.js';
 
 const NavBar = (props) => {
   const [NavItems] = useState([
-    'Company', 'Jobs', 'FAQ',
+    'Company', 'Contact Us', 'Careers', 'Privacy Policy', 'Terms'
   ])
   const NavItemArray = NavItems.map( item => {
     return (

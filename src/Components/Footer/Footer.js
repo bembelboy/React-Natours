@@ -14,7 +14,7 @@ const  Footer = (props) => {
           <NavBar />
         </styled.FooterBox>
         <styled.FooterBox>
-
+          <styled.FooterCopyRight>This is the CopyRightClaimer</styled.FooterCopyRight>
         </styled.FooterBox>
       </styled.FooterContainer>
     </styled.Footer>
