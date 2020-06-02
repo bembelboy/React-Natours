@@ -4,7 +4,7 @@ import BackgroundBooking from "../../../img/nat-10.jpg";
 import { SecondaryHeading } from '../../UI/styledHeadings.js';
 
 export const BookingContainer = styled.section `
-  padding: 15rem 3rem;
+  padding: 30rem 6rem;
   background-image: linear-gradient(
     to right bottom,
     rgb(${props => props.theme[nameProperty.lightGreen]}),
