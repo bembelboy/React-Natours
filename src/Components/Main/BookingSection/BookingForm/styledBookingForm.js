@@ -6,3 +6,15 @@ export const BookingFormBox = styled.div`
 `;
 
 export const BookingForm = styled.form``;
+
+export const FormGroup = styled.div`
+
+`;
+
+export const FormInput = styled.input`
+
+`;
+
+export const FormLabel = styled.label`
+
+`;

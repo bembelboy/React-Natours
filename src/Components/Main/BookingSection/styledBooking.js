@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import * as nameProperty from "../../../GlobalStyles/Theme/nameProperties.js";
 import BackgroundBooking from "../../../img/nat-10.jpg";
+import { SecondaryHeading } from '../../UI/styledHeadings.js';
 
-export const BookingContainer = styled.section`
+export const BookingContainer = styled.section `
   padding: 15rem 3rem;
   background-image: linear-gradient(
     to right bottom,
@@ -11,7 +12,7 @@ export const BookingContainer = styled.section`
   );
 `;
 
-export const BookingBox = styled.div`
+export const BookingBox = styled.div `
   position: relative;
   background-image: linear-gradient(
       105deg,
@@ -25,4 +26,12 @@ export const BookingBox = styled.div`
     rgba(${props => props.theme[nameProperty.black]}, 0.15);
 
   height: 50rem;
+`;
+
+export const BookingHeading = styled(SecondaryHeading)`
+`;
+
+export const BookingHeadingBox = styled.div`
+  display: block;
+  padding: 5rem;
 `;
