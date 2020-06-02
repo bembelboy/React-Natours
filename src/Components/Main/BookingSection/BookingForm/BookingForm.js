@@ -11,7 +11,7 @@ const BookingForm = props => {
           <styled.FormLabel>Full Name</styled.FormLabel>
         </styled.FormGroup>
         <styled.FormGroup>
-          <styled.FormInput type='text' placeholder='E-Mail' required />
+          <styled.FormInput type='email' placeholder='E-Mail' required />
           <styled.FormLabel>E-Mail</styled.FormLabel>
         </styled.FormGroup>
       </styled.BookingForm>

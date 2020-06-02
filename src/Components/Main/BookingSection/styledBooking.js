@@ -32,6 +32,7 @@ export const BookingHeading = styled(SecondaryHeading)`
 `;
 
 export const BookingHeadingBox = styled.div`
+  width: 50%;
   display: block;
-  padding: 5rem;
+  padding: 3rem;
 `;
