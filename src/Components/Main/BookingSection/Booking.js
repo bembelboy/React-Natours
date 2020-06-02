@@ -8,6 +8,7 @@ const Booking = props => {
   return (
     <styled.BookingContainer>
       <styled.BookingBox>
+
         <styled.BookingHeadingBox>
           <styled.BookingHeading>Start booking now!</styled.BookingHeading>
         </styled.BookingHeadingBox>

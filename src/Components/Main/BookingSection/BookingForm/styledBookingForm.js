@@ -7,7 +7,7 @@ export const BookingFormBox = styled.div `
   padding: 6rem;
 `;
 
-export const BookingForm = styled.form `
+export const BookingForm = styled.form`
 
 `;
 
@@ -43,7 +43,6 @@ transition: all .3s;
   box-shadow: 0 1rem 2rem rgba(${props => props.theme[nameProperty.black]}, .1);
   border-bottom: 3px solid rgb(${props => props.theme[nameProperty.mediumGreen]});
 }
-
 &:focus:invalid {
   border-bottom: 3px solid rgb(${props => props.theme[nameProperty.orange]});
 }
