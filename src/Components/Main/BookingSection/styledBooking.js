@@ -13,20 +13,16 @@ export const BookingContainer = styled.section`
 
 export const BookingBox = styled.div`
   position: relative;
-  background-image: url(${BackgroundBooking});
+  background-image: linear-gradient(
+      105deg,
+      rgba(${props => props.theme[nameProperty.white]}, 0.9) 50%,
+      transparent 50%
+    ),
+    url(${BackgroundBooking});
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem
     rgba(${props => props.theme[nameProperty.black]}, 0.15);
 
   height: 50rem;
-`;
-
-export const BookingContentBox = styled.div`
-  height: 50rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: rgba(${props => props.theme[nameProperty.white]}, 0.9);
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 `;

@@ -2,11 +2,14 @@ import React from "react";
 
 import * as styled from "./styledBooking.js";
 
+import BookingForm from './BookingForm/BookingForm.js';
+
 const Booking = props => {
   return (
     <styled.BookingContainer>
-      <styled.BookingContentBox></styled.BookingContentBox>
-      <styled.BookingBox></styled.BookingBox>
+      <styled.BookingBox>
+        <BookingForm />
+      </styled.BookingBox>
     </styled.BookingContainer>
   );
 };
