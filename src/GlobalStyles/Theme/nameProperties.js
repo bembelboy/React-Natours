@@ -11,7 +11,7 @@ export const yellow = 'yellow';
 export const orange = 'orange';
 export const lightBlue = 'lightBlue';
 export const purple = 'purple';
+export const darkGrey = 'darkGrey';
 
 //FONTS
 export const defaultFontSize = 'defaultFontSize';
-

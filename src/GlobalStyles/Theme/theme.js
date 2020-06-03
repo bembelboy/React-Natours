@@ -13,6 +13,7 @@ export const theme = {
     [nameProperty.orange]: '255, 176, 18', //#ff7730
     [nameProperty.lightBlue]: '29, 232, 242', //#2998ff
     [nameProperty.purple]: '120, 10, 163', //#5643fa
+    [nameProperty.darkGrey]: '51, 51, 51',// #333
 
     //Fonts
     [nameProperty.defaultFontSize]: '1.6rem',
