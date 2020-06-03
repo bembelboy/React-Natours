@@ -1,18 +1,104 @@
 import styled from 'styled-components';
+import * as nameProperty from './../../GlobalStyles/Theme/nameProperties.js';
 
 
-export const NavContainer = styled.div`
-
-`;
-
-export const NavItemBox = styled.div`
+export const NavContainer = styled.div `
 
 `;
 
-export const NavCheckbox = styled.input`
+
+export const NavBackround = styled.div `
+height: 6rem;
+width: 6rem;
+border-radius: 50%;
+background-color: black;
+position: fixed;
+top: 6.5rem;
+right: 6.5rem;
+background-image: radial-gradient(
+  rgb(${props => props.theme[nameProperty.lightGreen]}),
+  rgb(${props => props.theme[nameProperty.darkGreen]}));
+z-index: 1000;
+transition: all .5s cubic-bezier(0.86 , 0, 0.07, 1);
+`;
+
+export const Navigation = styled.nav `
+height: 100vh;
+position: fixed;
+top: 0;
+right: 0;
+z-index: 1500;
+
+opacity: 0;
+width: 0;
+transition: all .5s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+`;
+
+export const NavList = styled.ul `
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+`;
+
+export const NavCheckbox = styled.input `
+display: none;
+`;
+
+export const NavLink = styled.a `
+`;
+
+export const NavItem = styled.li `
+cursor: pointer;
+margin: 3rem;
+
+display: block;
+padding: 1rem 2rem;
+font-size: 3rem;
+font-weight: 300;
+color: rgb(${props => props.theme[nameProperty.white]});
+text-decoration: none;
+text-transform: uppercase;
+background-image: linear-gradient(120deg, transparent 0%, transparent 50%,
+  rgb(${props => props.theme[nameProperty.white]}) 50%);
+background-size: 225%;
+transition: all .4s;
+
+
+&:hover, &:active {
+background-position: 100%;
+color: rgb(${props => props.theme[nameProperty.lightGreen]});
+transform: translateX(-1rem);
+}
 
 `;
 
-export const NavElement = styled.label`
+export const NavButton = styled.input `
+  visibility: hidden;
+  display: none;
+&:checked ~ ${NavBackround} {
+  transform: scale(130);
+  transition: all .8s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
 
+&:checked ~ ${Navigation} {
+  opacity: 1;
+  width: 100%;
+  transition: opacity .5s ease-in;
+}
+`;
+
+export const NavButtonLabel = styled.label `
+background-color: rgb(${props => props.theme[nameProperty.white]});
+height: 7rem;
+width: 7rem;
+border-radius: 50% ;
+position: fixed;
+top: 6rem;
+right: 6rem;
+border: none;
+z-index: 2000;
+box-shadow: 0 1rem 3rem rgba(${props => props.theme[nameProperty.black]}, .1);
 `;
