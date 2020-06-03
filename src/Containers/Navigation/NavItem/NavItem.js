@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as styled from './styledNavigation.js';
+import * as styled from './styledNavItem.js';
 
 
 const NavItem = (props) => {

@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import * as styled from './styledNavigation.js';
 
-import NavItem from './NavItem.js';
+import NavItem from './NavItem/NavItem.js';
 
 
 const Navigation = (props) => {
