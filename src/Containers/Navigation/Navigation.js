@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import * as styled from './styledNavigation.js';
 
+import NavButton from './../../Components/UI/NavButton/Navbutton.js';
 import NavItem from './NavItem/NavItem.js';
 
 
@@ -13,12 +14,11 @@ const Navigation = (props) => {
 
   const NavArray = NameTag.map(name => {
     return <NavItem name={name}/>;
-  })
+  });
   return (
     <styled.NavContainer>
       <styled.NavButton type='checkbox' id='nav-toggle'/>
-      <styled.NavButtonLabel htmlFor='nav-toggle'>Menu
-      </styled.NavButtonLabel>
+      <NavButton htmlFor={'nav-toggle'}/>
       <styled.NavBackround/>
       <styled.Navigation>
         <styled.NavList>

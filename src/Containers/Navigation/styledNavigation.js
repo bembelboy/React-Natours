@@ -63,16 +63,3 @@ export const NavButton = styled.input `
   transition: opacity .5s ease-in;
 }
 `;
-
-export const NavButtonLabel = styled.label `
-background-color: rgb(${props => props.theme[nameProperty.white]});
-height: 7rem;
-width: 7rem;
-border-radius: 50% ;
-position: fixed;
-top: 6rem;
-right: 6rem;
-border: none;
-z-index: 2000;
-box-shadow: 0 1rem 3rem rgba(${props => props.theme[nameProperty.black]}, .1);
-`;
