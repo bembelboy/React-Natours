@@ -12,8 +12,12 @@ const Navigation = (props) => {
     'About Natours', 'Your Benefits', 'Popular Tours', 'Stories', 'Book Now'
   ]);
 
+const [Linktag] = useState([
+  '/about' , '/features', '/tours' , '/stories' , '/booking'
+]);
+
   const NavArray = NameTag.map(name => {
-    return <NavItem name={name}/>;
+    return <NavItem  link={Linktag[NameTag.indexOf(name)]} name={name}/>;
   });
   return (
     <styled.NavContainer>

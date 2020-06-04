@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 import * as  nameProperty from './../../../GlobalStyles/Theme/nameProperties.js';
+import { Link } from 'react-router-dom';
 
 
-export const NavLink = styled.a `
+export const NavLink = styled(Link) `
+text-decoration: none;
+color: rgb(${props => props.theme[nameProperty.white]});
+
+&:hover, &:active {
+background-position: 100%;
+color: rgb(${props => props.theme[nameProperty.lightGreen]});
+transform: translateX(-1rem);
+}
 `;
 
 export const NavItem = styled.li `

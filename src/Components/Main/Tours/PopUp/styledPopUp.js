@@ -12,6 +12,7 @@ background-color: rgba(${props => props.theme[nameProperty.black]}, .8);
 height: 100vh;
 width: 100%;
 z-index: 4000;
+display: none;
 `;
 
 export const PopUpBox = styled.div`
