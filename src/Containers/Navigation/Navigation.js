@@ -17,7 +17,7 @@ const Navigation = (props) => {
   });
   return (
     <styled.NavContainer>
-      <NavButton enable={'connectCheckbox'}/>
+      <NavButton/>
       <styled.NavBackround/>
       <styled.Navigation>
         <styled.NavList>

@@ -58,16 +58,16 @@ const Tours = () => {
         }
         return (
             <CardWrapper onMouseOver={(event) => flipCard(event)}>
-                <FrontCard 
-                cardPicture={cardPicture} 
-                 colorGradient={colorGradient} 
-                 heading={box.heading}
-                 cardDetails={[...box.details]}
-                 />
-                 <BackCard
-                 colorGradient={colorGradient}
-                 price={box.price}
-                 />
+              <FrontCard
+                cardPicture={cardPicture}
+                colorGradient={colorGradient}
+                heading={box.heading}
+                cardDetails={[...box.details]}
+              />
+              <BackCard
+                colorGradient={colorGradient}
+                price={box.price}
+              />
             </CardWrapper>
         )
     })
@@ -75,11 +75,11 @@ const Tours = () => {
 
     return (
         <styled.ToursContainer>
-            <styled.ToursHeading>Most Popular Tours</styled.ToursHeading>
-            <styled.ToursBox>
-                {tourBoxInfoArray}
-            </styled.ToursBox>
-            <styled.GreenButton>See all Tours</styled.GreenButton>
+          <styled.ToursHeading>Most Popular Tours</styled.ToursHeading>
+          <styled.ToursBox>
+            {tourBoxInfoArray}
+          </styled.ToursBox>
+          <styled.GreenButton>See all Tours</styled.GreenButton>
         </styled.ToursContainer>
     );
 }
