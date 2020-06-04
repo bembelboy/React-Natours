@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import * as nameProperty from './../../../GlobalStyles/Theme/nameProperties.js';
+import * as nav from '../../../Containers/Navigation/styledNavigation.js';
 
 
 
@@ -62,6 +63,42 @@ box-shadow: 0 1rem 3rem rgba(${props => props.theme[nameProperty.black]}, .1);
     transition: all .2s;
   }
 }
+`;
 
+export const NavRadioCheckbox = styled.input `
+  visibility: hidden;
+  display: none;
+&:checked ~ ${nav.NavBackround} {
+  transform: scale(130);
+  transition: all .8s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
+}
 
+&:checked ~ ${nav.Navigation} {
+  opacity: 1;
+  width: 100%;
+  transition: opacity .5s ease-in;
+}
+
+&:checked + ${NavButtonLabel} {
+  ${NavIcon}{
+    background-color: transparent;
+    transition: all .2s;
+  }
+}
+
+&:checked + ${NavButtonLabel} {
+  ${NavIcon}::before {
+    top: 0;
+    transform: rotate(135deg);
+    transition: all .3s;
+  }
+}
+
+&:checked + ${NavButtonLabel} {
+  ${NavIcon}::after {
+    top: 0;
+    transform: rotate(-135deg);
+    transition: all .3s;
+  }
+}
 `;

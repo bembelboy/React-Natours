@@ -42,24 +42,3 @@ export const NavList = styled.ul `
   list-style: none;
   text-align: center;
 `;
-
-export const NavCheckbox = styled.input `
-display: none;
-`;
-
-
-
-export const NavButton = styled.input `
-  visibility: hidden;
-  display: none;
-&:checked ~ ${NavBackround} {
-  transform: scale(130);
-  transition: all .8s cubic-bezier(0.68 , -0.55, 0.265, 1.55);
-}
-
-&:checked ~ ${Navigation} {
-  opacity: 1;
-  width: 100%;
-  transition: opacity .5s ease-in;
-}
-`;

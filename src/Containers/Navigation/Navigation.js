@@ -17,8 +17,7 @@ const Navigation = (props) => {
   });
   return (
     <styled.NavContainer>
-      <styled.NavButton type='checkbox' id='nav-toggle'/>
-      <NavButton htmlFor={'nav-toggle'}/>
+      <NavButton enable={'connectCheckbox'}/>
       <styled.NavBackround/>
       <styled.Navigation>
         <styled.NavList>
